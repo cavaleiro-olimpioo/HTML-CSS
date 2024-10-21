@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, rgb(0, 81, 255), rgb(255, 136, 0));
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: rgb(27, 27, 27);
+}
+h1{
+    background-image: linear-gradient(to left, rgb(0, 81, 255), rgb(255, 136, 0));
+    text-align: center;
+    color: black;
+}
+h2{
+    background-image: linear-gradient(to left, rgb(0, 81, 255), rgb(255, 136, 0));
+    color: rgb(255, 115, 0);
+    text-align: right;
+}
+h2#html{
+    color: rgb(0, 0, 109);
+    text-align: left;
+}
+h3#a{
+    text-align: right;
+}

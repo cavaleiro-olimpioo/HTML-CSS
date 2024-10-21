@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+
+body{ /*Fundo*/
+    background-color: rgb(125, 125, 125);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header{ /*Cabeçario*/
+    background-color: #ececec;
+    padding: 0px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.74);
+    border-radius: 10px 10px 0px 0px;
+}
+
+main{ /*Conteúdo*/
+    background-color: #ececec;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer{ /*Rodapé*/
+    background-color: rgb(22, 22, 22);
+    margin: 10px 0px 50px 0px;
+    color: white;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer > p > a{ /*Config do Apple Huntes link*/
+    color: red;
+}
+
+
+h1{ /*Config do titulo principal*/
+    margin: 0px 0px 21px 0px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.507);
+}
+
+article#html{ /*Config dos textos/parágrafos do html*/
+    background-color: rgba(150, 150, 150, 0.5);;
+}
+
+article#css{ /*Config dos textos/parágrafos da css*/
+    background-color: rgba(150, 150, 150, 0.5);
+}
+
+h2{
+    margin: 5px;
+}
+
+nav > a{ /*Config das opções do Cabeçalho*/
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+    margin: 10px 5px;
+    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+nav > a:hover{ /*Config para quando passar o mouse em cima das opções do cabeçalho*/
+    background-color: rgb(0, 0, 0);
+}
+
+footer > p{ /*Margem no p do rodapé*/
+    margin: 0px;
+}
+
+p > a:hover{
+    color: rgb(129, 0, 0);
+}
+
+div#Matheus{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    margin: auto;
+    border: 10px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font: bold 3em Fuzzy Bubbles, arial, sans-serif;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    padding: 50px;
+}
+
+h1{
+    font-weight: 900;
+    color: #ffff;
+    font-size: 2.5em;
+}
+
+nav{
+    color: white;
+    font-weight: normal;
+    font-size: 0.5em;
+}
+
+a{
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #b8b8b8;
+}
+
+main p{
+    line-height: 2em;
+    font-weight: bold;
+}
+
+aside{
+    margin: 100px 30px;
+}
+
+p.imagem{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 250px 40px;;
+    color: #ffff;
+}
+
+aside#estilo1{
+    background-image: url('imagens/background001.jpg');
+    background-size: cor9;
+    margin: 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+aside#estilo2{
+    background-image: url('imagens/background002.jpg');
+    background-size: cor9;
+    margin: 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 0.5em;
+    color: #ffff;
+    padding: 10px;
+}

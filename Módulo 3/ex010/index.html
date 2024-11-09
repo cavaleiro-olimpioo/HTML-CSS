@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            margin: auto;
+        }
+        th{
+            background-color: gray;
+            color: white;
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+            padding-left: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #cprofissão{
+            background-color: greenyellow;
+        }
+        .destaque{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabelas</h1>
+    <table>
+        <colgroup>
+            <col id="cnome">
+            <col id="csexo">
+            <col id="cidade">
+            <col id="cprofissão">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>Feminino</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Alessandro</td>
+                <td>Masculino</td>
+                <td>47</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr class="destaque">
+                <td>Guilherme</td>
+                <td>Masculino</td>
+                <td>27</td>
+                <td>Programador Full Stack</td>
+            </tr>
+            <tr>
+                <td>Marta</td>
+                <td>Feminino</td>
+                <td>41</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Isabela</td>
+                <td>Feminino</td>
+                <td>27</td>
+                <td>Desenvolvedora Web</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Masculino</td>
+                <td>24</td>
+                <td>Autonomo</td>
+            </tr>
+            <tr>
+                <td>Sebastião</td>
+                <td>Masculino</td>
+                <td>20</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Sophia</td>
+                <td>Feminino</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

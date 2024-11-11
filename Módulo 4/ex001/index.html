@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        iframe{
+            height: 300px;
+            width: 600px;
+            border: 5px solid black;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando iframes</h1>
+    <p>Acesse o site do <a href="https://cursoemvideo.com" target="_blank">CursoemVideo</a> para aprender a programar e desenvolver</p>
+
+    <iframe
+        src="https://cursoemvideo.com" frameborder="1">
+        <a href="https://cursoemvideo.com" target="_blank">Curso em video</a>
+    </iframe>
+
+    <p>O site do <a href="https://www.google.com" target="_blank">Google</a> também é muito sigma, mas é paia pq não pode ser usado em iframes</p>
+    
+    <iframe 
+        src="https://www.google.com" frameborder="0">
+        <a href="https://www.google.com" target="_blank">Google</a>
+    </iframe>
+
+    <p>Acesse o <a href="https://gustavoguanabara.github.io" target="_blank"></a></p>
+
+    <iframe
+        src="https://gustavoguanabara.github.io" frameborder="0">
+        <a href="https://gustavoguanabara.github.io" target="_blank">repositório</a>
+    </iframe>
+</body>
+</html>

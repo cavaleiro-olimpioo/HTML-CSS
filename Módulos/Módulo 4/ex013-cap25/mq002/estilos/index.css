@@ -1,1 +1,28 @@
 @charset "UTF-8";
+/*Config padrão*/
+
+:root{
+    --cor-cev: #233eff;
+    --cor-cev-e: #1526a7;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-cev);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+    text-shadow: 3px 3px 0px var(--cor-cev-e);
+    padding: 10px;
+}
+

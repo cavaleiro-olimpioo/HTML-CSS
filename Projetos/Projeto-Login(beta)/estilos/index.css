@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #64317e;
+}
+
+div#main{
+    background-color: white;
+    width: 235px;
+    margin: auto;
+    height: 300px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+div#imagem{
+    background: url('../imagens/predio.jpg') center no-repeat;
+    background-size: cover;
+    width: 255px;
+    height: 200px;
+    margin: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+
+main{
+    position: absolute;
+    display: block;
+    height: 520px;
+    transition: 0.5s;
+
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5em; 
+    margin-bottom: 10px;
+}
+
+p{
+    text-align: left;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+fieldset{
+    background-color: #64317e;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #64317e;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+label img{
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 30px;
+    margin-right: 5px;
+}
+
+input.text{
+    background-color: #7bddbc;
+    height: 30px;
+    border: 2px #7bddbc;
+    width: 175px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input.text:active{
+    border: 2px solid black;
+}
+
+input#sub{
+    height: 50px;
+    margin-bottom: 5px;
+    width: 235px;
+    border: 2px solid #3fc99b;
+    background-color: #3fc99b;
+    color: white;
+    border-radius: 10px;
+}
+
+input#sub:hover{
+    background-color: #184738;
+    border: 2px solid #184738;
+    cursor: pointer;
+}
+
+input#es{
+    height: 50px;
+    width: 235px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #3fc99b;
+}
+
+input#es:hover{
+    background-color: #22c9c9;
+    border: 2px solid #22c9c9;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible</title>
+    <style>
+        div.container{
+            background-color: blue;
+
+            flex-flow: row nowrap;
+            display: flex;
+        }
+        div.item{
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 400px;
+        }
+
+        #A{
+            flex-shrink: 1;
+            flex-grow: 10;
+        }
+        #B{
+            flex-shrink: 2;
+            flex-grow: 2;
+        }
+        #C{
+            flex-shrink: 3;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="A">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam voluptatum praesentium sit laborum aut repellendus itaque recusandae. Delectus numquam voluptatum nihil, cum nostrum corrupti, error iure alias recusandae, minus aliquid. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga placeat laborum facere fugiat asperiores eveniet error in vero aliquid corporis fugit dolor molestias obcaecati necessitatibus provident, cumque praesentium atque expedita! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam magnam cum aperiam cumque explicabo doloribus non sit quidem vitae, mollitia inventore, aspernatur tempore deserunt! Quisquam voluptatem aliquam tempore iste!</div>
+        <div class="item" id="B">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi deleniti tenetur omnis quam quo, laborum error necessitatibus et fugit ipsa? Fugit cumque illum velit non hic reprehenderit soluta consequuntur reiciendis!</div>
+        <div class="item" id="C">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus sapiente totam inventore esse pariatur exercitationem optio. Corporis aliquid quibusdam excepturi modi vitae fugiat corrupti voluptates, repellat magnam aliquam ut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore voluptatem accusamus animi blanditiis maxime ab soluta vitae? Vel earum ea, et animi consequuntur in aut numquam laudantium minima iste quia.</div>
+    </div>
+</body>
+</html>

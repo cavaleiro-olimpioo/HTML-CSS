@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button-animation</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        button{
+            background-image: linear-gradient(to right, #0059ff, rgb(0, 145, 255), cyan);
+            width: 150px;
+            height: 60px;
+            font-size: 1.2em;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            border-radius: 10px;
+            transition: 0.5s linear;
+        }
+        button:hover{
+            cursor: pointer;
+            animation: btn 0.9s linear infinite alternate;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes btn{
+            0%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <button>
+        Compre agora!
+    </button>
+</body>
+</html>

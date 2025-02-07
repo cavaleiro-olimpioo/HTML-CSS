@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degrade-animado</title>
+    <style>
+        :root{
+            --roxo: #960CF2; 
+            --rosa: #F205E2; 
+            --laranja01: #F20587;
+            --laranja02: #F24607;
+            --amarelo: #F29F05;
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        header{
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to right, var(--roxo), var(--rosa), var(--laranja01), var(--laranja02), var(--amarelo), var(--roxo));
+            background-size: 600% 100%;
+            animation: degrade 10s ease-in-out infinite;
+        }
+        h1{
+            font-weight: 300;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @keyframes degrade{
+            0%{
+                background-position-x: 0%;
+            }
+            20%{
+                background-position-x: 100%;
+            }
+            40%{
+                background-position-x: 200%;
+            }
+            60%{
+                background-position-x: 300%;
+            }
+            80%{
+                background-position-x: 400%;
+            }
+            100%{
+                background-position-x: 500%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello World!</h1>
+    </header>
+</body>
+</html>

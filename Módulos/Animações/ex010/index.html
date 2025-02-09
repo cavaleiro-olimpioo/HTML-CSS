@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient no txt</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            font-family: Poppins, sans-serif;
+            font-weight: 800;
+        }
+        .txt{
+            font-size: 5em;
+            text-transform: uppercase;
+            
+            background: linear-gradient(40deg, red, orange, yellow, green, blue, purple);
+            background-size: 600% 100%;
+            animation: degrade 12s linear infinite;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            outline: none;
+        }
+        @keyframes degrade{
+            0%{
+                background-position-x: 0%;
+            }
+            50%{
+                background-position-x: 400%;
+            }
+            100%{
+                background-position-x: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div contenteditable="true" class="txt">
+        victtor é gay
+    </div>
+</body>
+</html>

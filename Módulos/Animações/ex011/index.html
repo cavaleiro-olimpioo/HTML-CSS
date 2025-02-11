@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito flip</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            background-image: linear-gradient(45deg, #eeeeee, #ffffff);
+        }
+        .container{
+            position: relative;
+            width: 250px;
+            height: 400px;
+        }
+
+        .container:hover .flip{
+            transform: rotateY(180deg);
+        }
+        .flip{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: 0.5s ease-in-out;
+        }
+
+        .frente, .tras{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.361);
+            text-align: center;
+            padding: 10px;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+        }
+
+        .tras{
+            background-color: #eeeeee;
+            transform: rotateY(180deg);
+
+        }
+
+        .frente{
+            background-size: cover;
+            border: 2px solid black;
+        }
+
+        .beta{
+            background-image: url(imagens/Guanabara-delicinha.jpeg);
+        }
+
+        .prime{
+            background-image: url(imagens/Guanabara-prime.jpeg);
+        }
+        .old{
+            background-image: url(imagens/Guanabara-old.jpeg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flip">
+            <div class="frente beta">
+
+            </div>
+            <div class="tras">
+                <h1>Guanabara beta</h1>
+                <p>This is a Guanabara newest, less studied, the worse version of Guanabara, because I didn't even know how to declare an object-oriented function in JavaScript in Notepad</p>
+                <!--Esse e o guanabara mais novo, menos estudado, a pior versao do Guanabara, pois nao sabia nem como declarar uma funcao orientada a objetos em JavaScript no bloco de notas-->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flip">
+            <div class="frente prime">
+
+            </div>
+            <div class="tras">
+                <h1>Guanabara prime</h1>
+                <p>The best and stronger version of Guanabara, in this version, he is in the pinnacle of your programming logic, in this moment, he's recorded your bests courses, like a Python and JavaScript</p>
+                <!--A melhor versao do Guanabara, a mais forte, ele atingiu o apse de sua logica de programacao, nesta epoca, gravou seus melhores cursos, como o de Python e JS-->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flip">
+            <div class="frente old">
+
+            </div>
+            <div class="tras">
+                <h1>Guanabara old(atual)</h1>
+                <p>The version more sigma of Guanabara, and version more important, in this moment, he's recorded courses like a html and css(please, finish module 5 🥺) and php modern</p>
+                <!--A versao mais calma do guanabara, uma das mais importantes, gravou cursos como de html e css(termina o modulo 5 guanabara pfvr 🥺) e php moderno-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

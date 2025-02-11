@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito de rolagem</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            border-radius: 10px;
+            width: 400px;
+            height: 600px;
+            background-image: url('GitHub\ 1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            transition: 1s ease-in-out;
+        }
+        main:hover{
+            background-position: center bottom;
+            transition: 10s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    </main>
+</body>
+</html>

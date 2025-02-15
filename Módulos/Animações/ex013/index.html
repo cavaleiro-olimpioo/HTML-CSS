@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Ripple</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn{
+            padding: 50px 100px;
+            background-color: #282828;
+            color: white;
+            border-radius: 100px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn span{
+            font-size: 2em;
+            position: relative;
+            z-index: 9999999;
+            transition: width .5s, height .5s;
+        }
+        .btn::before{
+            content: " ";
+            background-color: rgb(255, 132, 0);
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: var(--eixoY);
+            left: var(--eixoX);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width .5s, height .5s;
+        }
+
+        .btn:hover::before{
+            width: 1000px;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="btn">
+        <span>Compre agora!</span>
+    </a>
+    <script>
+        var btn = document.querySelector('.btn')
+
+        btn.onmousemove = function(e){
+            let x = e.pageX - btn.offsetLeft
+            let y = e.pageY - btn.offsetTop
+
+            btn.style.setProperty('--eixoX', x + 'px')
+            btn.style.setProperty('--eixoY', y + 'px')
+        }
+    </script>
+</body>
+</html>

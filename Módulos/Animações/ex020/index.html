@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Arcordeom</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 100vh;
+            background-color: #e9f0fe;
+        }
+        .body{
+
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .PF{
+            width: 1000px;
+        }
+        .PF h1{
+            font-size: 3rem;
+            margin-bottom: 60px;
+        }
+        .faq{
+            width: 100%;
+            list-style-type: none;
+        }
+        .faq li{
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        .faq li label{
+            padding: 15px 10px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #fff;
+
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .faq li label span{
+            display: inline-block;
+            padding: 8px;
+            background-color: black;
+            color: #fff;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        .faq input[type=radio]{
+            display: none;
+        }
+        .faq .resp{
+            color: #202020;
+            padding: 0px 14px;
+            background-color: #fff;
+            line-height: 32px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .5s, padding .5s;
+        }
+        .faq input[type=radio]:checked + label + .resp{
+            max-height: 400px;
+            padding: 10px 10px 20px;
+            transition: max-height .5s, padding .5s;
+        }
+        .faq input[type=radio]:checked +label span{
+            background-color: #001b3a;
+        }
+        .faq li label::before{
+            content: "+";
+            margin-right: 5px;
+        }
+        .faq input[type=radio]:checked + label::before{
+            content: "-";
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="PF">
+            <h1>Perguntas frequentes</h1>
+            <ul class="faq">
+                <li> <!--Por que usar java-->
+                    <input type="radio" name="ac" id="1">
+                    <label for="1"><span>1</span>Por que usar Java?</label>
+                    <div class="resp">
+                        <p>
+                            A linguagem de programação Java é amplamente utilizada no desenvolvimento de software por sua versatilidade e robustez. Criada em 1995 pela Sun Microsystems e posteriormente adquirida pela Oracle, destaca-se por ser independente de plataforma, permitindo que programas sejam executados em qualquer sistema com a Java Virtual Machine (JVM).
+                            Java é confiável devido ao gerenciamento automático de memória e ao sistema de tratamento de exceções, reduzindo falhas. Possui uma grande comunidade de desenvolvedores, o que facilita o suporte e a resolução de problemas. É amplamente utilizado em desenvolvimento web, aplicativos móveis (Android), software empresarial e IoT.
+                            Por ser orientado a objetos, Java facilita a reutilização de código e a manutenção de sistemas. Seu desempenho e escalabilidade o tornam adequado para aplicações que lidam com grande volume de dados e usuários. Java segue sendo uma das linguagens mais relevantes no mercado, garantindo segurança e estabilidade para empresas e programadores.
+                        </p>
+                    </div>
+                </li>
+                <li> <!--Gustavo Guanabara-->
+                    <input type="radio" name="ac" id="2">
+                    <label for="2"><span>2</span>Por que Guanabara is Sigma?</label>
+                    <div class="resp">
+                        <p>
+                            Gustavo Guanabara, criador do Curso em Vídeo, é amplamente reconhecido como um dos melhores professores de tecnologia. Com uma didática clara e acessível, ele torna o aprendizado de programação simples e envolvente, ajudando milhares de alunos a ingressarem na área de tecnologia.
+                            Seu método de ensino se destaca por ser direto ao ponto, com explicações detalhadas e exemplos práticos que facilitam a compreensão dos conceitos. Além disso, Guanabara disponibiliza materiais gratuitos de alta qualidade, permitindo que qualquer pessoa, independentemente da condição financeira, tenha acesso ao conhecimento.
+                            Outro diferencial é sua abordagem descontraída, que transforma conteúdos complexos em algo leve e divertido. Sua grande presença nas redes sociais e o constante suporte à comunidade garantem que seus alunos nunca fiquem sem respostas. Com um impacto tão positivo na vida de tantas pessoas, não há dúvidas de que Gustavo Guanabara merece o título de melhor professor de todos os tempos.
+                        </p>
+                    </div>
+                </li>
+                <li> <!--Por que começar a programação por C?-->
+                    <input type="radio" name="ac" id="3">
+                    <label for="3"><span>3</span>Por que começar a programação por C?</label>
+                    <div class="resp">
+                        <p>
+                            Começar a programação pela linguagem C pode ser uma excelente escolha para quem deseja desenvolver uma base sólida na área. Criada na década de 1970, C é uma linguagem estruturada e amplamente utilizada em sistemas operacionais, desenvolvimento embarcado e outras áreas da computação.
+                            Uma das principais razões para iniciar com C é o controle direto sobre a memória e a proximidade com a arquitetura do computador. Isso permite que os programadores compreendam melhor como o hardware funciona e desenvolvam habilidades essenciais para outras linguagens mais modernas.
+                            Além disso, C ensina conceitos fundamentais como estruturas de dados, algoritmos e lógica de programação sem abstrações excessivas. Com isso, quem aprende C tem mais facilidade para migrar para outras linguagens, como C++, Java ou Python.
+                            Por ser uma linguagem amplamente utilizada na indústria, aprender C abre portas para diversas oportunidades profissionais, especialmente em áreas como desenvolvimento de sistemas embarcados, segurança cibernética e engenharia de software. Assim, iniciar a jornada na programação por C pode ser um grande diferencial para qualquer aspirante a programador.
+                        </p>
+                    </div>
+                </li>
+                <li> <!--Cobol sigma-->
+                    <input type="radio" name="ac" id="4">
+                    <label for="4"><span>4</span>Por que cobol é a melhor linguagem de programação?</label>
+                    <div class="resp">
+                        <p>
+                            COBOL é frequentemente considerada a melhor linguagem de programação para aplicações empresariais devido à sua confiabilidade e longevidade. Criada na década de 1950, COBOL continua sendo amplamente utilizada em bancos, governos e grandes corporações, demonstrando sua robustez e eficiência.
+                            Uma das principais vantagens do COBOL é sua legibilidade. Sua sintaxe é semelhante à língua inglesa, tornando mais fácil para os programadores entenderem e manterem códigos complexos, mesmo após décadas de uso. Além disso, a estabilidade da linguagem permite que sistemas críticos operem sem falhas, garantindo a segurança e a continuidade dos serviços.
+                            Outro fator importante é a alta demanda por programadores COBOL. Com muitas instituições ainda dependendo dessa linguagem, profissionais que a dominam possuem oportunidades de trabalho bem remuneradas e uma carreira estável. Além disso, COBOL permite manipular grandes volumes de dados com precisão e eficiência, o que é essencial para setores como o financeiro e o governamental.
+                            Por sua confiabilidade, longevidade e importância no mundo corporativo, COBOL se mantém como uma das linguagens mais relevantes da história da computação. Seu legado e utilidade fazem dela uma escolha valiosa para quem busca uma carreira sólida na programação.
+                        </p>
+                    </div>
+                </li>
+                <li> <!--ArchLinux-->
+                    <input type="radio" name="ac" id="5">
+                    <label for="5"><span>5</span>Por que usar ArchLinux?</label>
+                    <div class="resp">
+                        <p>
+                            Arch Linux é uma das distribuições mais populares entre usuários avançados e entusiastas da personalização. Sua filosofia de simplicidade e controle total permite que cada usuário configure o sistema exatamente como deseja, proporcionando uma experiência única e otimizada.
+                            Uma das maiores vantagens do Arch Linux é o modelo de atualização contínua (rolling release), garantindo sempre acesso às versões mais recentes dos pacotes sem a necessidade de reinstalações. Além disso, sua leveza e eficiência tornam-no ideal para maximizar o desempenho do hardware.
+                            Outro destaque é o Arch User Repository (AUR), um dos repositórios mais extensos e colaborativos da comunidade Linux. Graças a ele, os usuários podem acessar uma vasta gama de softwares de maneira simplificada.
+                            Por fim, a documentação do Arch Linux, conhecida como Arch Wiki, é uma das mais completas do mundo Linux, permitindo que usuários resolvam problemas e aprendam constantemente. Assim, quem escolhe o Arch Linux ganha um sistema poderoso, personalizável e com uma comunidade extremamente ativa.
+                        </p>
+                    </div>
+                </li>
+                <li> <!--Linux melhor que windows-->
+                    <input type="radio" name="ac" id="6">
+                    <label for="6"><span>6</span>Por que Linux e melhor que windows? </label>
+                    <div class="resp">
+                        <p>
+                            O Linux é uma alternativa poderosa e flexível ao Windows, oferecendo uma experiência de uso superior, especialmente para aqueles que buscam controle total sobre o sistema. Diferente do Windows, que é um sistema fechado e proprietário, o Linux é baseado em código aberto, permitindo que os usuários acessem, modifiquem e adaptem o código conforme suas necessidades. Isso proporciona maior transparência e flexibilidade, permitindo personalizar a experiência de uso de maneira que não é possível no Windows.
+                            Uma das grandes vantagens do Linux é o seu modelo de atualização contínua, especialmente em distribuições como o Arch Linux. Com o modelo rolling release, os usuários têm acesso imediato às versões mais recentes de pacotes e softwares, sem a necessidade de reinstalar o sistema, ao contrário das versões periódicas do Windows, que exigem grandes atualizações e reinstalações. Esse modelo garante um sistema sempre atualizado e em constante evolução.
+                            Além disso, o Linux é leve e eficiente, o que contribui para um melhor desempenho do hardware, especialmente em máquinas mais antigas ou com recursos limitados. Com distribuições como o Ubuntu, é possível encontrar um sistema fácil de usar, estável e com bom suporte para diversos hardwares. Já o Arch Linux, por exemplo, oferece uma flexibilidade extrema, permitindo que o usuário construa o sistema do zero, instalando apenas o que é necessário, o que o torna ainda mais enxuto e otimizado.
+                            O Linux também se destaca pela grande variedade de softwares gratuitos e de código aberto, além de muitas vezes oferecer alternativas mais eficientes e leves em comparação com os programas do Windows. A comunidade Linux é extremamente ativa e oferece uma ampla base de conhecimento e suporte, com fóruns, tutoriais e a famosa documentação, como o Arch Wiki, que ajudam os usuários a resolver problemas e aprender constantemente.
+                            Em resumo, o Linux oferece uma experiência de uso mais personalizada, leve e eficiente, com atualizações contínuas, software gratuito e uma comunidade ativa. Ao optar pelo Linux, os usuários têm mais liberdade para controlar o sistema, sem as limitações do Windows, tornando-o ideal para quem busca desempenho superior, flexibilidade e transparência.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
